@@ -1,0 +1,50 @@
+item {
+  id: 1
+  name: 'Ulos Bittang Maratur'
+}
+
+item {
+  id: 2
+  name: 'Ulos Bulang'
+}
+
+item {
+  id: 3
+  name: 'Ulos Hati Rongga'
+}
+
+item {
+  id: 4
+  name: 'Ulos Mangiring'
+}
+
+item {
+  id: 5
+  name: 'Ulos Ragi Idup'
+}
+
+item {
+  id: 6
+  name: 'Ulos Ragi Santik'
+}
+
+item {
+  id: 7
+  name: 'Ulos Simangkat-Angkat'
+}
+
+item {
+  id: 8
+  name: 'Ulos Sitoluntuho'
+}
+
+item {
+  id: 9
+  name: 'Ulos Suri-Suri'
+}
+
+item {
+  id: 10
+  name: 'Ulos Tapak Satur'
+}
+
