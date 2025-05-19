@@ -56,6 +56,7 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.compose.material.icons.extended)
+    implementation(libs.androidx.palette)
 
     // camera model
     implementation(libs.tensorflow.lite)

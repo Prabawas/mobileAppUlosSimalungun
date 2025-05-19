@@ -12,18 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-
-
 import com.example.mydetectionapp.ui.splash.SplashScreen
 import com.example.mydetectionapp.ui.theme.MyDetectionAppTheme
 import com.example.mydetectionapp.ui.home.HomeScreen
 import com.example.mydetectionapp.ui.mainScreen.CameraScreen
 import com.example.mydetectionapp.ui.mainScreen.UlosListScreen
 import com.example.mydetectionapp.ui.mainScreen.ulosDetail.UlosDetailScreen
-
-
-
-// First change to start
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,30 +67,4 @@ fun AppNavigation() {
             UlosDetailScreen(index = index, navController = navController)
         }
     }
-
-//    NavHost(
-//        navController = navController,
-//        startDestination = "splash"
-//    ) {
-//        composable("splash") {
-//            SplashScreen(navController)
-//        }
-//
-//        composable("home") {
-//            HomeScreen(navController)
-//        }
-//
-//        composable("camera") {
-//            CameraScreen(navController)
-//        }
-//
-//        composable("ulos") {
-//            UlosListScreen(navController)
-//        }
-//
-//        composable("ulosDetail/{index}") { backStackEntry ->
-//            val index = backStackEntry.arguments?.getString("index")?.toIntOrNull() ?: 0
-//            UlosDetailScreen(index = index, navController = navController)
-//        }
-//    }
 }
