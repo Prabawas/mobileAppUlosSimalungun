@@ -99,6 +99,11 @@ fun UlosDetailScreen(index: Int, navController: NavController) {
             // Informasi Detail
             DetailSection("Deskripsi", selectedUlos.description, usuGreen)
             DetailSection("Kegunaan", selectedUlos.usage, usuGreen)
+            // Tambahkan ini di sini
+            HowToWearImagesRow(
+                imageRes1 = selectedUlos.howToWearImageRes1,
+                imageRes2 = selectedUlos.howToWearImageRes2
+            )
             DetailSection("Cara Pakai", selectedUlos.howToWear, usuGreen)
             DetailSection("Makna", selectedUlos.meaning, usuGreen)
             DetailSection("Penjelasan Tambahan", selectedUlos.extraInfo, usuGreen)
@@ -147,5 +152,35 @@ fun DetailSection(title: String, content: String, titleColor: Color) {
                 style = MaterialTheme.typography.bodyMedium.copy(color = Color.DarkGray)
             )
         }
+    }
+}
+
+@Composable
+fun HowToWearImagesRow(imageRes1: Int, imageRes2: Int) {
+    Row(
+        modifier = Modifier
+            .fillMaxWidth()
+            .height(180.dp),
+        horizontalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        ImageCard(imageRes = imageRes1, modifier = Modifier.weight(1f))
+        ImageCard(imageRes = imageRes2, modifier = Modifier.weight(1f))
+    }
+}
+
+@Composable
+fun ImageCard(imageRes: Int, modifier: Modifier = Modifier) {
+    Card(
+        modifier = modifier,
+        shape = RoundedCornerShape(16.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 6.dp),
+        colors = CardDefaults.cardColors(containerColor = Color.White)
+    ) {
+        Image(
+            painter = painterResource(id = imageRes),
+            contentDescription = "Gambar Cara Pakai Ulos",
+            contentScale = ContentScale.Crop,
+            modifier = Modifier.fillMaxSize()
+        )
     }
 }

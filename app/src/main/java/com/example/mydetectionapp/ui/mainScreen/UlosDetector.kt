@@ -19,7 +19,7 @@ class UlosDetector(private val context: Context) {
     private val labels: List<String>
 
     init {
-        val model = loadModelFile("detect_25000.tflite")
+        val model = loadModelFile("detect_30000.tflite")
         interpreter = Interpreter(model)
 
         // Ambil ukuran input model dari Tensor
@@ -27,7 +27,7 @@ class UlosDetector(private val context: Context) {
         inputHeight = inputShape[1]
         inputWidth = inputShape[2]
 
-        labels = context.assets.open("labelmap.txt").bufferedReader().readLines()
+        labels = context.assets.open("labelmap_30000.txt").bufferedReader().readLines()
     }
 
     private fun loadModelFile(filename: String): MappedByteBuffer {

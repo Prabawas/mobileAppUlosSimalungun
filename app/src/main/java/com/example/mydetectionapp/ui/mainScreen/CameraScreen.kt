@@ -32,6 +32,7 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.CameraAlt
 import androidx.compose.ui.platform.LocalLifecycleOwner
+import androidx.compose.ui.unit.sp
 
 import com.google.accompanist.permissions.*
 
@@ -53,16 +54,26 @@ fun CameraScreen(navController: NavController) {
 
     // ✅ Daftar class ulos sesuai urutan di UlosData.kt
     val ulosList = listOf(
-        "Ulos Bittang Maratur",
-        "Ulos Bulang",
-        "Ulos Hati Rongga",
-        "Ulos Mangiring",
-        "Ulos Ragi Idup",
-        "Ulos Ragi Santik",
-        "Ulos Simangkat-Angkat",
-        "Ulos Sitoluntuho",
-        "Ulos Suri-Suri",
-        "Ulos Tapak Satur"
+//        "Ulos Bittang Maratur",
+//        "Ulos Bulang",
+//        "Ulos Hati Rongga",
+//        "Ulos Mangiring",
+//        "Ulos Ragi Idup",
+//        "Ulos Ragi Santik",
+//        "Ulos Simangkat-Angkat",
+//        "Ulos Sitoluntuho",
+//        "Ulos Suri-Suri",
+//        "Ulos Tapak Satur"
+            "bittang-maratur",
+            "bulang",
+            "hati-rongga",
+            "mangiring",
+            "ragi-idup",
+            "ragi-santik",
+            "simangkat-angkat",
+            "sitoluntuho",
+            "suri-suri",
+            "tapak-satur"
     )
 
     // ✅ State untuk navigasi hanya sekali
@@ -101,7 +112,7 @@ fun CameraScreen(navController: NavController) {
                         },
                         modifier = Modifier
                             .align(Alignment.BottomCenter) // Posisi tetap di bawah, tapi...
-                            .padding(start = 16.dp, end = 16.dp, bottom = 90.dp), // 🔼 Ganti dari 16.dp jadi 48.dp atau sesuai kebutuhan
+                            .padding(start = 16.dp, end = 16.dp, bottom = 60.dp), // 🔼 Ganti dari 16.dp jadi 48.dp atau sesuai kebutuhan
                         colors = ButtonDefaults.buttonColors(containerColor = usuGreen)
                     ) {
                         Text(
@@ -139,23 +150,38 @@ fun CameraScreen(navController: NavController) {
             }
         }
 
-        // Tombol Back
-        IconButton(
-            onClick = {
-                navController.popBackStack()
-            },
+        // 🔁 Bar Atas: Tombol Back + Judul Halaman
+        Row(
             modifier = Modifier
-                .padding(start = 16.dp, top = 50.dp)
-                .align(Alignment.TopStart)
-                .background(usuGreen, shape = CircleShape) // Ubah ke usuGreen
-//                .background(Color.White.copy(alpha = 0.9f), shape = CircleShape)
-                .size(40.dp)
+                .fillMaxWidth()
+                .padding(top = 50.dp, start = 16.dp, end = 16.dp)
+                .align(Alignment.TopStart),
+            verticalAlignment = Alignment.CenterVertically
         ) {
-            Icon(
-                imageVector = Icons.Default.ArrowBack,
-                contentDescription = "Back",
-                tint = Color.White // Ubah ke putih
-//                tint = usuGreen
+            IconButton(
+                onClick = {
+                    navController.popBackStack()
+                },
+                modifier = Modifier
+                    .background(usuGreen, shape = CircleShape)
+                    .size(40.dp)
+            ) {
+                Icon(
+                    imageVector = Icons.Default.ArrowBack,
+                    contentDescription = "Back",
+                    tint = Color.White
+                )
+            }
+
+            Spacer(modifier = Modifier.width(20.dp)) // Jarak antara icon dan text
+
+            Text(
+                text = "Deteksi Kain Ulos",
+                color = usuDarkGreen,
+                style = MaterialTheme.typography.titleMedium.copy(
+                    fontWeight = FontWeight.Bold,
+                    fontSize = 20.sp
+                )
             )
         }
     }
@@ -209,7 +235,7 @@ fun CameraPreviewView(
 
                                 // ✅ Navigasi ke detail ulos jika confidence > 85%
                             // ✅ Simpan class name jika confidence > 85%
-                            val confident = results.firstOrNull { it.confidence >= 0.85f }
+                            val confident = results.firstOrNull { it.confidence >= 0.90f }
                             if (confident != null) {
                                 detectedClass.value = confident.label
                             } else {

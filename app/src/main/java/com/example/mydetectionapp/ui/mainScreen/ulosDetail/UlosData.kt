@@ -1,6 +1,8 @@
 package com.example.mydetectionapp.ui.mainScreen.ulosDetail
 
+//import android.R
 import com.example.mydetectionapp.R
+
 
 data class Ulos(
     val name: String,
@@ -10,7 +12,9 @@ data class Ulos(
     val meaning: String,
     val extraInfo: String,
     val imageRes1: Int,
-    val imageRes2: Int
+    val imageRes2: Int,
+    val howToWearImageRes1: Int,
+    val howToWearImageRes2: Int
 )
 
 val ulosListData = listOf(
@@ -22,7 +26,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan doa untuk kesehatan, keberkahan, restu, dan kelangsungan kehidupan yang penuh kesejahteraan.",
         extraInfo = "Seiring perkembangan zaman, Ulos Bittang Maratur tetap mempertahankan pola tradisionalnya, namun mulai bermunculan variasi warna dan motif tambahan agar lebih menarik bagi generasi muda, tanpa menghilangkan makna filosofis aslinya.",
         imageRes1 = R.drawable.detail_0_ulos_bittang_maratur_1,
-        imageRes2 = R.drawable.detail_0_ulos_bittang_maratur_2
+        imageRes2 = R.drawable.detail_0_ulos_bittang_maratur_2,
+        howToWearImageRes1 = R.drawable.tata_cara_bittang_maratur_1,
+        howToWearImageRes2 = R.drawable.tata_cara_bittang_maratur_2
     ),
     Ulos(
         name = "Ulos Bulang",
@@ -32,7 +38,9 @@ val ulosListData = listOf(
         meaning = "Mewakili perlindungan, kehormatan, keseimbangan hidup, serta berkah dari roh nenek moyang kepada pemakainya.",
         extraInfo = "Ulos Bulang biasanya berwarna merah, hitam, dan putih dengan motif geometris rumit, dibuat menggunakan teknik tenun tradisional dari benang kapas atau sutra berpewarna alami. Saat ini, ulos ini juga diaplikasikan dalam busana pengantin dan kerajinan tangan modern demi menjaga kelestarian salah satu budaya Simalungun.",
         imageRes1 = R.drawable.detail_1_ulos_bulang_1,
-        imageRes2 = R.drawable.detail_1_ulos_bulang_2
+        imageRes2 = R.drawable.detail_1_ulos_bulang_2,
+        howToWearImageRes1 = R.drawable.tata_cara_bulang_1,
+        howToWearImageRes2 = R.drawable.tata_cara_bulang_2
     ),
     Ulos(
         name = "Ulos Hati Rongga",
@@ -42,7 +50,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan semangat, keberanian, kehormatan, dan harapan akan kehidupan rumah tangga yang harmonis dan penuh berkat.",
         extraInfo = "Warna merah pada Ulos Hati Rongga melambangkan kekuatan dan cinta, sementara aksen emas melambangkan kemakmuran dan keagungan. Kain ini tidak hanya dipakai dalam upacara pernikahan, tetapi juga dalam acara adat besar lain sebagai simbol status dan penghormatan terhadap tradisi leluhur.",
         imageRes1 = R.drawable.detail_2_ulos_hati_rongga_1,
-        imageRes2 = R.drawable.detail_2_ulos_hati_rongga_2
+        imageRes2 = R.drawable.detail_2_ulos_hati_rongga_2,
+        howToWearImageRes1 = R.drawable.tata_cara_hatirongga_1,
+        howToWearImageRes2 = R.drawable.tata_cara_hatirongga_2
     ),
     Ulos(
         name = "Ulos Mangiring",
@@ -52,7 +62,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan kesuburan, keharmonisan keluarga, persatuan, dan harapan akan kehidupan yang sukses dan memuaskan.",
         extraInfo = "Nama 'Mangiring' berasal dari motif kain yang saling beriringan, mencerminkan harapan agar anak pertama akan diikuti oleh saudara-saudara lainnya. Kain ini sering digunakan sebagai 'ulos parompa' atau gendongan bayi, serta sebagai simbol perlindungan dan berkah dari leluhur.",
         imageRes1 = R.drawable.detail_3_ulos_mangiring_1,
-        imageRes2 = R.drawable.detail_3_ulos_mangiring_2
+        imageRes2 = R.drawable.detail_3_ulos_mangiring_2,
+        howToWearImageRes1 = R.drawable.tata_cara_mangiring_1,
+        howToWearImageRes2 = R.drawable.tata_cara_mangiring_2
     ),
     Ulos(
         name = "Ulos Ragi Idup",
@@ -62,7 +74,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan kehidupan, keberkahan, dan harapan akan keturunan yang banyak serta keluarga yang harmonis.",
         extraInfo = "Ulos Ragi Idup memiliki warna putih di bagian tengah ujung kain yang dipadukan dengan warna merah hati sehingga memberikan kesan mewah dan megah. Pembuatan ulos ini sangat rumit karena terdapat tiga bagian tenun, yaitu dua sisi kain ditenun sekaligus, sedangkan bagian tengah ditenun tersendiri.",
         imageRes1 = R.drawable.detail_4_ulos_ragi_idup_1,
-        imageRes2 = R.drawable.detail_4_ulos_ragi_idup_2
+        imageRes2 = R.drawable.detail_4_ulos_ragi_idup_2,
+        howToWearImageRes1 = R.drawable.tata_cara_bittang_maratur_1,
+        howToWearImageRes2 = R.drawable.tata_cara_bittang_maratur_2
     ),
     Ulos(
         name = "Ulos Ragi Santik",
@@ -72,7 +86,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan kehormatan, keanggunan, koneksi spiritual dengan leluhur, serta kebanggaan terhadap warisan budaya Simalungun.",
         extraInfo = "Motif tenunan yang beragam dengan detail halus, mengkombinasikan warna-warna gelap yang menambah kesan sakral dan artistik; sering diwariskan antar generasi sebagai lambang keberlanjutan tradisi.",
         imageRes1 = R.drawable.detail_5_ulos_ragi_santik_1,
-        imageRes2 = R.drawable.detail_5_ulos_ragi_santik_2
+        imageRes2 = R.drawable.detail_5_ulos_ragi_santik_2,
+        howToWearImageRes1 = R.drawable.tata_cara_ragi_santik_1,
+        howToWearImageRes2 = R.drawable.tata_cara_ragi_santik_2
     ),
     Ulos(
         name = "Ulos Simangkat Angkat",
@@ -82,7 +98,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan restu, dukungan, ikatan kekeluargaan, penghormatan terhadap leluhur, serta ekspresi kesakralan dalam setiap tahapan hidup manusia.",
         extraInfo = "Motifnya menggunakan pola elegan dengan dominasi warna gelap, memperkuat kesan keagungan dan kesakralan; ulos ini memiliki posisi istimewa dalam mempererat tali persaudaraan antar marga di Simalungun.",
         imageRes1 = R.drawable.detail_6_ulos_simangkat_angkat_1,
-        imageRes2 = R.drawable.detail_6_ulos_simangkat_angkat_2
+        imageRes2 = R.drawable.detail_6_ulos_simangkat_angkat_2,
+        howToWearImageRes1 = R.drawable.tata_cara_simangkat_1,
+        howToWearImageRes2 = R.drawable.tata_cara_simangkat_2
     ),
     Ulos(
         name = "Ulos Sitoluntuho",
@@ -92,7 +110,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan kasih sayang, perlindungan, kesejahteraan, harapan untuk kebahagiaan, serta kelanjutan hubungan antar generasi.",
         extraInfo = "Motif dan warna dipilih secara khusus untuk membawa doa dan restu keluarga besar; Ulos Sitoluntuho tidak hanya fungsional tetapi juga sakral, menjadi lambang eratnya nilai kekeluargaan.",
         imageRes1 = R.drawable.detail_7_ulos_sitoluntuho_1,
-        imageRes2 = R.drawable.detail_7_ulos_sitoluntuho_2
+        imageRes2 = R.drawable.detail_7_ulos_sitoluntuho_2,
+        howToWearImageRes1 = R.drawable.tata_cara_sitoluntuho_1,
+        howToWearImageRes2 = R.drawable.tata_cara_sitoluntuho_2
     ),
     Ulos(
         name = "Ulos Suri-Suri",
@@ -102,7 +122,9 @@ val ulosListData = listOf(
         meaning = "Melambangkan keberanian, kesedihan, harapan, dan kelestarian hubungan manusia dengan alam serta leluhur; menjadi identitas budaya dan spiritualitas masyarakat Simalungun.",
         extraInfo = "Motifnya mengadopsi pola alam, tumbuhan, dan hewan dengan filosofi mendalam; warna dominan seperti merah, hitam, putih, dan kuning membawa simbolisme kuat; beberapa Ulos Suri-Suri dibuat dari katun, sutra, bahkan disulam dengan benang emas atau perak untuk menunjukkan kemewahan.",
         imageRes1 = R.drawable.detail_8_ulos_suri_suri_1,
-        imageRes2 = R.drawable.detail_8_ulos_suri_suri_2
+        imageRes2 = R.drawable.detail_8_ulos_suri_suri_2,
+        howToWearImageRes1 = R.drawable.tata_cara_suri_suri,
+        howToWearImageRes2 = R.drawable.tata_cara_suri_suri_1
     ),
     Ulos(
         name = "Ulos Tapak Catur",
@@ -112,6 +134,8 @@ val ulosListData = listOf(
         meaning = "Melambangkan keterikatan perempuan dengan nilai-nilai tradisi, kesetiaan terhadap adat, serta identitas sosial di masyarakat.",
         extraInfo = "Motifnya mengusung pola tapak atau jejak kaki yang sarat makna perjalanan hidup dan kontinuitas generasi; kain ini menjadi simbol kedewasaan, komitmen terhadap adat, dan kebanggaan budaya.",
         imageRes1 = R.drawable.detail_9_ulos_tapak_satur_1,
-        imageRes2 = R.drawable.detail_9_ulos_tapak_satur_2
+        imageRes2 = R.drawable.detail_9_ulos_tapak_satur_2,
+        howToWearImageRes1 = R.drawable.tata_cara_tapakcatur_1,
+        howToWearImageRes2 = R.drawable.tata_cara_tapakcatur_2
     )
 )

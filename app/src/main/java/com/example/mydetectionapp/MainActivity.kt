@@ -16,6 +16,7 @@ import com.example.mydetectionapp.ui.splash.SplashScreen
 import com.example.mydetectionapp.ui.theme.MyDetectionAppTheme
 import com.example.mydetectionapp.ui.home.HomeScreen
 import com.example.mydetectionapp.ui.mainScreen.CameraScreen
+import com.example.mydetectionapp.ui.mainScreen.PetunjukScreen
 import com.example.mydetectionapp.ui.mainScreen.UlosListScreen
 import com.example.mydetectionapp.ui.mainScreen.ulosDetail.UlosDetailScreen
 
@@ -52,6 +53,9 @@ fun AppNavigation() {
         }
         composable("camera") {
             CameraScreen(navController)
+        }
+        composable("petunjuk") {
+            PetunjukScreen(navController) // <-- Buat composable ini nanti
         }
         composable("ulos") {
             UlosListScreen(navController)

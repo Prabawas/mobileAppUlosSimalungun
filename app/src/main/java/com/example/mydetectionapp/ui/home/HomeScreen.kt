@@ -97,6 +97,20 @@ fun HomeScreen(navController: NavController) {
             ) {
                 Text("Lihat Kain Ulos", color = Color.White, fontSize = 18.sp)
             }
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Button(
+                onClick = { navController.navigate("petunjuk") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(60.dp)
+                    .shadow(4.dp, RoundedCornerShape(12.dp)),
+                colors = ButtonDefaults.buttonColors(Color(0xFF008577)),
+                shape = RoundedCornerShape(12.dp)
+            ) {
+                Text("Petunjuk", color = Color.White, fontSize = 18.sp)
+            }
         }
     }
 }

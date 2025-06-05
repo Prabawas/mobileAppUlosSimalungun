@@ -19,16 +19,26 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
 val ulosList = listOf(
-    "Ulos Bittang Maratur",
-    "Ulos Bulang",
-    "Ulos Hati Rongga",
-    "Ulos Mangiring",
-    "Ulos Ragi Idup",
-    "Ulos Ragi Santik",
-    "Ulos Simangkat Angkat",
-    "Ulos Sitoluntuho",
-    "Ulos Suri Suri",
-    "Ulos Tapak Satur"
+//    "Ulos Bittang Maratur",
+//    "Ulos Bulang",
+//    "Ulos Hati Rongga",
+//    "Ulos Mangiring",
+//    "Ulos Ragi Idup",
+//    "Ulos Ragi Santik",
+//    "Ulos Simangkat Angkat",
+//    "Ulos Sitoluntuho",
+//    "Ulos Suri Suri",
+//    "Ulos Tapak Satur"
+    "bittang-maratur",
+    "bulang",
+    "hati-rongga",
+    "mangiring",
+    "ragi-idup",
+    "ragi-santik",
+    "simangkat-angkat",
+    "sitoluntuho",
+    "suri-suri",
+    "tapak-satur"
 )
 
 @OptIn(ExperimentalMaterial3Api::class)
