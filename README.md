@@ -20,8 +20,8 @@ Petunjuk => Merupakan halaman yang bisa menjadi petunjuk penggunaan aplikasi mul
 Deteksi Kamera => Halaman ini merupakan fitur utama di Aplikasi dimana pengguna bisa menggunakan kamera untuk mendeteksi secara real-time kain Ulos Simalungun, ketika app sudah berhasil mendeteksi kain Ulos, maka akan tampil tombol yang dapat diklik dan mengarahkan pengguna ke halaman deskripsi kain Ulos Simalungun.
 
 ### Halaman Lihat Kain Ulos
-<img src="app/halaman_Lihat_kain_ulos_1.png" width="270" height="555"/>
 <img src="app/halaman_lihat_kain_ulos_2.png" width="270" height="555"/>
+<img src="app/halaman_Lihat_kain_ulos_1.png" width="270" height="555"/>
 <img src="app/halaman_lihat_kain_ulos_3.png" width="270" height="555"/>
 Lihat Kain Ulos => Halaman ini merupakan daftar kain Ulos Simalungun dimana disini terdapat 10 jenis kain Ulos Simalungun diantaranya : Ulos Bulang, Tapak Catur, Ragi Santik, Ragi Idup, Hati Rongga, Sitoluntuho, Mangiring, Simangkat Angkat, Bittang Maratur.
 
