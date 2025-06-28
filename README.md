@@ -26,7 +26,7 @@ Deteksi Kamera => Halaman ini merupakan fitur utama di Aplikasi dimana pengguna 
 Lihat Kain Ulos => Halaman ini merupakan daftar kain Ulos Simalungun dimana disini terdapat 10 jenis kain Ulos Simalungun diantaranya : Ulos Bulang, Tapak Catur, Ragi Santik, Ragi Idup, Hati Rongga, Sitoluntuho, Mangiring, Simangkat Angkat, Bittang Maratur.
 
 # Arsitektur Umum
-<img src="app/arsitektur_umum.png" width="270" height="555"/>
+<img src="app/arsitektur_umum.png" width="2006" height="1788"/>
 
 # Link Demo Program
 Link Youtube :  ([Youtube](https://www.youtube.com/watch?v=eXjBbV1DBzg&ab_channel=KokotiSaid))
