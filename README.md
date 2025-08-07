@@ -1,32 +1,32 @@
-# Aplikasi Deteksi Kain Ulos Simalungun Secara Real-Time Menggunakan SSD MobileNetV2 FPN 
+# Real-Time Detection Application for Simalungun Ulos Fabric Using SSD MobileNetV2 FPN
 
-Aplikasi Deteksi Kain Ulos Simalungun Real-Time adalah aplikasi yang diharapkan bisa menjadi wadah dalam mengenalkan dan mengedukasi masyarakat terkhusus generasi muda tentang budaya kain Ulos Simalungun. Dimana aplikasi ini dapat mendeteksi secara langsung objek kain Ulos Simalungun dan mengklasifikasikan ke kelas tertentu. Bukan hanya mengklasifikasi namun juga memberikan penjelasan terkait kain Ulos Simalungun tersebut mulai dari deskripsi, kegunaan, cara pakai, makna dan penjelasan tambahan. Aplikasi ini dibangun dengan mengimplementassikan model algoritma SSD sebagai decisions, MobileNetV2 sebagai backbone atau feature extractor yang dibantu oleh FPN(Feature Pyramid Network) dalam meng-ekstraksi fitur paling kecil dari kain ulos simalungun guna mendapatkan akurasi yang optimal dalam deteksi secara real-time.
+The Real-Time Simalungun Ulos Fabric Detection Application is an application that is expected to serve as a platform for introducing and educating the public, especially the younger generation, about the culture of Simalungun Ulos fabric. This application can directly detect Simalungun Ulos fabric objects and classify them into specific categories. Not only does it classify the fabric, but it also provides detailed explanations about the Ulos Simalungun fabric, including its description, usage instructions, meaning, and additional information. The application was developed by implementing the SSD algorithm model as the decision-making mechanism, MobileNetV2 as the backbone or feature extractor, and FPN (Feature Pyramid Network) to extract the smallest features from the Ulos Simalungun fabric, thereby achieving optimal accuracy in real-time detection.
 
-# Tampilan Halaman Aplikasi
-### Halaman Splash Screen
+# Display of Application Page
+### Splash Screen Page
 <img src="app/halaman_splash_screen.png" width="270" height="555"/>
-Splash Screen => Merupakan menu pertaama ketika membuka aplikasi
+Splash Screen => This is the first menu that appears when you open the application.
 
-### Halaman Utama
+### Main Screen
 <img src="app/halaman_utama_1.png" width="270" height="555"/>
-Halaman Utama => Merupakan Halaman dimana terdapat 3 tombol yang mengarahkan ke halaman masing-masing yaitu "Deteksi Kamera", "Lihat Kain Ulos", dan "Petunjuk".
+Home Page => This page contains three buttons that link to separate pages: “Camera Detection,” “View Ulos Fabric,” and “Instructions.”
 
-### Halaman Petunjuk
+### Instructions Screen
 <img src="app/halaman_petunjuk.png" width="270" height="555"/>
-Petunjuk => Merupakan halaman yang bisa menjadi petunjuk penggunaan aplikasi mulai dari penggunaan kamera dalam mendeteksi dan jenis kain ulos yang dapat di deteksi diaman disini berjumlah 10 kain Ulos Simalungun.
+Instructions => This page provides instructions on how to use the application, starting from how to use the camera to detect and identify the types of ulos fabric that can be detected, which in this case are 10 types of Simalungun ulos fabric.
 
-### Halaman Deteksi Kamera
+### Camera Detection Page
 <img src="app/halaman_deteksi_kamera.jpg" width="270" height="555"/>
-Deteksi Kamera => Halaman ini merupakan fitur utama di Aplikasi dimana pengguna bisa menggunakan kamera untuk mendeteksi secara real-time kain Ulos Simalungun, ketika app sudah berhasil mendeteksi kain Ulos, maka akan tampil tombol yang dapat diklik dan mengarahkan pengguna ke halaman deskripsi kain Ulos Simalungun.
+Camera Detection => This page is the main feature of the app where users can use the camera to detect Simalungun Ulos fabric in real time. Once the app has successfully detected the Ulos fabric, a clickable button will appear, directing users to the Simalungun Ulos fabric description page.
 
-### Halaman Lihat Kain Ulos
+### Ulos Fabric View Page
 <img src="app/halaman_lihat_kain_ulos_2.png" width="270" height="555"/>
 <img src="app/halaman_Lihat_kain_ulos_1.png" width="270" height="555"/>
 <img src="app/halaman_lihat_kain_ulos_3.png" width="270" height="555"/>
-Lihat Kain Ulos => Halaman ini merupakan daftar kain Ulos Simalungun dimana disini terdapat 10 jenis kain Ulos Simalungun diantaranya : Ulos Bulang, Tapak Catur, Ragi Santik, Ragi Idup, Hati Rongga, Sitoluntuho, Mangiring, Simangkat Angkat, Bittang Maratur.
+See Ulos Fabric => This page lists 10 types of Simalungun Ulos fabric, including: Ulos Bulang, Tapak Catur, Ragi Santik, Ragi Idup, Hati Rongga, Sitoluntuho, Mangiring, Simangkat Angkat, and Bittang Maratur.
 
-# Arsitektur Umum
+# General architecture
 <img src="app/arsitektur_umum.png" width="1003" height="894"/>
 
-# Link Demo Program
+# Program Demo Link
 Link Youtube :  ([Youtube](https://www.youtube.com/watch?v=eXjBbV1DBzg&ab_channel=KokotiSaid))
